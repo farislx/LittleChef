@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvFoodPhoto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/tvFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/person_name"
+        android:layout_alignTop="@+id/cvFoodPhoto"
+        android:layout_toRightOf="@+id/cvFoodPhoto"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/accent_color"
+        android:layout_toEndOf="@+id/cvFoodPhoto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/person_address"
+        android:id="@+id/tvFoodPrice"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tvFoodItem"
+        android:layout_alignLeft="@+id/tvFoodItem"
+        android:layout_alignStart="@+id/tvFoodItem" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_primary"
+        android:layout_below="@+id/cvFoodPhoto"
+        android:layout_alignLeft="@+id/cvFoodPhoto"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>
