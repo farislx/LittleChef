@@ -21,7 +21,7 @@ public class LoginActivity extends Activity implements android.view.View.OnClick
     Button btnLogin;
     EditText mTxtDisplay;
     String url = "https://httpbin.org/get";
-
+//faris
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
